@@ -1,0 +1,33 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-geist-sans: 'Geist', system-ui, sans-serif;
+    --font-geist-mono: 'Geist Mono', monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; }
+
+  body {
+    @apply bg-white text-neutral-900;
+    font-family: var(--font-geist-sans);
+  }
+
+  ::selection { @apply bg-neutral-900 text-white; }
+
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-neutral-200 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-neutral-300; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+}
