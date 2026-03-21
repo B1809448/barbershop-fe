@@ -18,7 +18,7 @@ const dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-  title: { default: 'PhuocDai PhuocDai BarberShop', template: '%s | PhuocDai PhuocDai BarberShop' },
+  title: { default: 'PhuocDai BarberShop', template: '%s | PhuocDai BarberShop' },
   description: 'Đặt lịch cắt tóc online — nhanh, tiện, chuyên nghiệp',
 }
 

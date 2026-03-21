@@ -1,4 +1,4 @@
-# PhuocDai PhuocDai BarberShop Frontend
+# PhuocDai BarberShop Frontend
 
 Next.js 14 + Tailwind CSS + Framer Motion — Clean & Minimal UI.
 
@@ -57,8 +57,8 @@ State được quản lý bởi Zustand (`useBookingStore`), persist qua các b�
 
 | Role     | Email                      | Password      |
 |----------|----------------------------|---------------|
-| Admin    | admin@PhuocDai PhuocDai BarberShop.com       | Admin@123     |
-| Barber   | barber1@PhuocDai PhuocDai BarberShop.com     | Barber@123    |
+| Admin    | admin@PhuocDai BarberShop.com       | Admin@123     |
+| Barber   | barber1@PhuocDai BarberShop.com     | Barber@123    |
 | Customer | customer@example.com       | Customer@123  |
 
 ## Các component chính

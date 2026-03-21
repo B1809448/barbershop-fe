@@ -68,7 +68,7 @@ export function DashboardLayout({ children }: { children: ReactNode }) {
           <div className="w-7 h-7 bg-neutral-900 rounded-lg flex items-center justify-center">
             <Scissors className="w-3.5 h-3.5 text-white" />
           </div>
-          <span className="font-semibold text-sm text-neutral-900">PhuocDai PhuocDai BarberShop</span>
+          <span className="font-semibold text-sm text-neutral-900">PhuocDai BarberShop</span>
         </Link>
 
         {/* Nav */}
