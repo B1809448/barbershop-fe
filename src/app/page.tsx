@@ -254,9 +254,9 @@ export default function HomePage() {
             <div className="w-7 h-7 bg-neutral-900 rounded-lg flex items-center justify-center">
               <Scissors className="w-3.5 h-3.5 text-white" />
             </div>
-            <span className="font-semibold text-sm">PhuocDai BarberShop</span>
+            <span className="font-semibold text-sm">PhuocDai PhuocDai BarberShop</span>
           </div>
-          <p className="text-sm text-neutral-400">© 2024 PhuocDai BarberShop. All rights reserved.</p>
+          <p className="text-sm text-neutral-400">© 2024 PhuocDai PhuocDai BarberShop. All rights reserved.</p>
           <div className="flex items-center gap-4 text-sm text-neutral-500">
             <Link href="/booking" className="hover:text-neutral-900 transition-colors">Đặt lịch</Link>
             <Link href="/login" className="hover:text-neutral-900 transition-colors">Đăng nhập</Link>

@@ -53,7 +53,7 @@ export default function LoginPage() {
             <div className="w-9 h-9 bg-neutral-900 rounded-xl flex items-center justify-center">
               <Scissors className="w-4.5 h-4.5 text-white" />
             </div>
-            <span className="font-semibold text-neutral-900">PhuocDai BarberShop</span>
+            <span className="font-semibold text-neutral-900">PhuocDai PhuocDai BarberShop</span>
           </Link>
 
           <div className="bg-white rounded-2xl border border-neutral-100 shadow-card p-8">
@@ -75,8 +75,8 @@ export default function LoginPage() {
             <div className="mt-6 p-4 bg-neutral-50 rounded-xl border border-neutral-100">
               <p className="text-xs font-medium text-neutral-600 mb-2">Tài khoản demo:</p>
               {[
-                { role: 'Admin',    email: 'admin@PhuocDai BarberShop.com',   pw: 'Admin@123' },
-                { role: 'Barber',   email: 'barber1@PhuocDai BarberShop.com', pw: 'Barber@123' },
+                { role: 'Admin',    email: 'admin@PhuocDai PhuocDai BarberShop.com',   pw: 'Admin@123' },
+                { role: 'Barber',   email: 'barber1@PhuocDai PhuocDai BarberShop.com', pw: 'Barber@123' },
                 { role: 'Customer', email: 'customer@example.com',   pw: 'Customer@123' },
               ].map((a) => (
                 <p key={a.role} className="text-xs text-neutral-500">

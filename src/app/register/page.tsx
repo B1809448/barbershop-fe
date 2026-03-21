@@ -54,7 +54,7 @@ export default function RegisterPage() {
             <div className="w-9 h-9 bg-neutral-900 rounded-xl flex items-center justify-center">
               <Scissors className="w-4.5 h-4.5 text-white" />
             </div>
-            <span className="font-semibold text-neutral-900">BarberShop</span>
+            <span className="font-semibold text-neutral-900">PhuocDai PhuocDai BarberShop</span>
           </Link>
 
           <div className="bg-white rounded-2xl border border-neutral-100 shadow-card p-8">
