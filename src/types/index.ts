@@ -40,6 +40,7 @@ export interface BarberProfile {
   totalReviews: number
   user?: Pick<User, 'id' | 'name' | 'email' | 'phone' | 'avatarUrl'>
   schedules?: BarberSchedule[]
+  reviews?: any
 }
 
 export interface BarberSchedule {

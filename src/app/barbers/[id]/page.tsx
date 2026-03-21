@@ -291,7 +291,7 @@ export default function BarberDetailPage() {
                   </div>
 
                   <div className="space-y-4">
-                    {barber.reviews.map((review, i) => (
+                    {barber.reviews.map((review: any, i: number) => (
                       <motion.div
                         key={review.id}
                         initial={{ opacity: 0, y: 6 }}
