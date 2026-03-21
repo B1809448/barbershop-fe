@@ -70,20 +70,6 @@ export default function LoginPage() {
                 Đăng nhập
               </Button>
             </form>
-
-            {/* Demo accounts */}
-            <div className="mt-6 p-4 bg-neutral-50 rounded-xl border border-neutral-100">
-              <p className="text-xs font-medium text-neutral-600 mb-2">Tài khoản demo:</p>
-              {[
-                { role: 'Admin',    email: 'admin@PhuocDai BarberShop.com',   pw: 'Admin@123' },
-                { role: 'Barber',   email: 'barber1@PhuocDai BarberShop.com', pw: 'Barber@123' },
-                { role: 'Customer', email: 'customer@example.com',   pw: 'Customer@123' },
-              ].map((a) => (
-                <p key={a.role} className="text-xs text-neutral-500">
-                  <span className="font-medium text-neutral-700">{a.role}:</span> {a.email} / {a.pw}
-                </p>
-              ))}
-            </div>
           </div>
 
           <p className="text-center text-sm text-neutral-500 mt-6">

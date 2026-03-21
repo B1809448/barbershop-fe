@@ -1,8 +1,8 @@
 // src/app/layout.tsx
 import type { Metadata } from 'next'
+import { Inter, DM_Mono } from 'next/font/google'
 import './globals.css'
 import { Providers } from './providers'
-import { Inter, DM_Mono } from 'next/font/google'
 
 const inter = Inter({
   variable: '--font-geist-sans',
@@ -18,8 +18,14 @@ const dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-  title: { default: 'PhuocDai BarberShop', template: '%s | PhuocDai BarberShop' },
+  title: { default: 'BarberShop', template: '%s | BarberShop' },
   description: 'Đặt lịch cắt tóc online — nhanh, tiện, chuyên nghiệp',
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-icon.png',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
