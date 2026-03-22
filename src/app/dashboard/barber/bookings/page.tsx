@@ -43,6 +43,7 @@ export default function BarberBookingsPage() {
         page,
         limit: 15,
       })
+      // res.data = { success, data: { data: [...], pagination: {...} } }
       const body  = res.data
       return {
         bookings:   (body?.data      ?? []) as Booking[],

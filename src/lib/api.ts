@@ -116,5 +116,5 @@ export const usersApi = {
 
 // Helper to extract data from ApiResponse
 export function unwrap<T>(res: any): T {
-  return res.data?.data ?? res.data
+  return res.data
 }
