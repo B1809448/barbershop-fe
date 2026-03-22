@@ -27,7 +27,7 @@ export default function CustomerDashboard() {
   const bookings = data ?? [] as any
   const pending   = bookings.filter((b: any) => b.status === 'PENDING').length
   const completed = bookings.filter((b: any) => b.status === 'COMPLETED').length
-  const totalSpent = bookings.filter((b: any) => b.status === 'COMPLETED').reduce((s, b) => s + b.totalPrice, 0)
+  const totalSpent = bookings.filter((b: any) => b.status === 'COMPLETED').reduce((s: any, b: any) => s + b.totalPrice, 0)
 
   const cancelMutation = useMutation({
     mutationFn: (id: string) => bookingsApi.cancel(id, 'Khách huỷ'),
