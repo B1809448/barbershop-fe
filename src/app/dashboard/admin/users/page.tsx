@@ -77,6 +77,7 @@ export default function AdminUsersPage() {
     },
     placeholderData: (prev) => prev,   // giữ data cũ khi đang fetch tránh flash
     staleTime: 10_000,
+    refetchOnMount: 'always',
   })
 
   const users      = rawData?.users      ?? []

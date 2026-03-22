@@ -31,6 +31,8 @@ export default function AdminServicesPage() {
   const { data: services } = useQuery({
     queryKey: ['services-admin'],
     queryFn: () => servicesApi.getAllAdmin({}).then((r) => unwrap<Service[]>(r)),
+    staleTime: 0,
+    refetchOnMount: 'always',
   })
 
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<FormData>({

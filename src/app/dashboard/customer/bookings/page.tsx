@@ -43,6 +43,8 @@ export default function CustomerBookingsPage() {
         page,
         limit: 10,
       }).then((r) => unwrap<PaginatedResponse<Booking>>(r)),
+    staleTime: 0,
+    refetchOnMount: 'always',
   })
 
   const cancelMut = useMutation({

@@ -30,6 +30,8 @@ export default function BarberSchedulePage() {
   const { data: existing } = useQuery({
     queryKey: ['my-schedules'],
     queryFn: () => schedulesApi.getMySchedules().then((r) => unwrap<BarberSchedule[]>(r)),
+    staleTime: 0,
+    refetchOnMount: 'always',
   })
 
   useEffect(() => {

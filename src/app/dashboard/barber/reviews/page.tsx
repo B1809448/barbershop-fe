@@ -14,6 +14,8 @@ export default function BarberReviewsPage() {
   const { data: profile, isLoading } = useQuery({
     queryKey: ['my-barber-profile'],
     queryFn: () => barbersApi.getMyProfile().then((r) => unwrap<BarberProfile>(r)),
+    staleTime: 0,
+    refetchOnMount: 'always',
   })
 
   // Fetch full profile with reviews using the public endpoint

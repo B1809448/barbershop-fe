@@ -22,6 +22,8 @@ export default function BarberDashboard() {
   const { data: stats } = useQuery({
     queryKey: ['barber-stats'],
     queryFn: () => barbersApi.getMyStats().then((r) => unwrap<any>(r)),
+    staleTime: 0,
+    refetchOnMount: 'always',
   })
 
   const { data: bookingsData, isLoading } = useQuery({

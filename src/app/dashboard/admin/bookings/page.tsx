@@ -30,6 +30,8 @@ export default function AdminBookingsPage() {
     queryFn: () =>
       bookingsApi.getAllAdmin({ status: activeTab === 'ALL' ? undefined : activeTab, limit: 20 })
         .then((r) => unwrap<PaginatedResponse<Booking>>(r)),
+    staleTime: 0,
+    refetchOnMount: 'always',
   })
 
   const updateStatus = useMutation({
