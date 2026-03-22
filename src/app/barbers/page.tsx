@@ -27,6 +27,8 @@ export default function BarbersPage() {
 
   const { data: barbers, isLoading } = useQuery({
     queryKey: ['barbers-public'],
+    staleTime: 0,
+    refetchOnMount: 'always',
     queryFn: () => barbersApi.getAll({}).then((r) => unwrap<BarberProfile[]>(r)),
   })
 

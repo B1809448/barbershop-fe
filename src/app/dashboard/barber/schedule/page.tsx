@@ -41,7 +41,7 @@ export default function BarberSchedulePage() {
   }, [existing])
 
   const save = useMutation({
-    mutationFn: () => schedulesApi.bulkUpsert({ schedules }),
+    mutationFn: () => schedulesApi.bulkUpsert(schedules),
     onSuccess: () => {
       toast.success('Đã lưu lịch làm việc')
       qc.invalidateQueries({ queryKey: ['my-schedules'] })

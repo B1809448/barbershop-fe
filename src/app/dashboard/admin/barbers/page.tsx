@@ -35,6 +35,8 @@ export default function AdminBarbersPage() {
 
   const { data: barbers, isLoading } = useQuery({
     queryKey: ['admin-barbers'],
+    staleTime: 0,
+    refetchOnMount: 'always',
     queryFn: () => barbersApi.getAll({}).then((r) => unwrap<BarberProfile[]>(r)),
   })
 
