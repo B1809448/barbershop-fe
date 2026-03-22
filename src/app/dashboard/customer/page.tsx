@@ -85,7 +85,7 @@ export default function CustomerDashboard() {
         />
       ) : (
         <div className="space-y-3">
-          {bookings.map((booking, i) => (
+          {bookings.map((booking: any, i: number) => (
             <motion.div key={booking.id} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
               <BookingCard
                 booking={booking}
